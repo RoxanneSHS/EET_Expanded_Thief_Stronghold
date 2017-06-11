@@ -1,25 +1,25 @@
-// GBThfKp - Expanded Thief Stronghold
+// EETGBThfKp - Expanded Thief Stronghold
 // Gebhard Blucher <g_blucher@yahoo.com>
 // Updated for EET by Roxanne@SHS
 
 // Header
-BACKUP  ~GBThfKp/_backup~
+BACKUP  ~EETGBThfKp/_backup~
 AUTHOR  ~g_blucher@yahoo.com~
 
 VERSION ~v2.21EE (+ BWP Fix)~
 
 
 // Language Options
-LANGUAGE  ~English~  ~GBThfKp/Translations/English~  ~GBThfKp/Translations/English/GBThfKp.tra~
-LANGUAGE  ~Deutsch (Uebersetzung von Dyara)~   ~GBThfKp/Translations/German~   ~GBThfKp/Translations/German/GBThfKp.tra~
-LANGUAGE  ~Español (translation by Dufroise and Immortality)~  ~GBThfKp/Translations/Spanish~  ~GBThfKp/Translations/Spanish/GBThfKp.tra~
-LANGUAGE  ~Russian (Aerie.ru + prowler)~  ~GBThfKp/Translations/Russian~  ~GBThfKp/Translations/Russian/GBThfKp.tra~
+LANGUAGE  ~English~  ~EETGBThfKp/Translations/English~  ~EETGBThfKp/Translations/English/GBThfKp.tra~
+LANGUAGE  ~Deutsch (Uebersetzung von Dyara)~   ~EETGBThfKp/Translations/German~   ~EETGBThfKp/Translations/German/GBThfKp.tra~
+LANGUAGE  ~Español (translation by Dufroise and Immortality)~  ~EETGBThfKp/Translations/Spanish~  ~EETGBThfKp/Translations/Spanish/GBThfKp.tra~
+LANGUAGE  ~Russian (Aerie.ru + prowler)~  ~EETGBThfKp/Translations/Russian~  ~EETGBThfKp/Translations/Russian/GBThfKp.tra~
 
 // Expanded Thief Stronghold
 BEGIN @2
 
 ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
-COMPILE ~GBThfKp/Scripts/TSGrd.baf~
+COMPILE ~EETGBThfKp/Scripts/TSGrd.baf~
 END ELSE BEGIN
 PRINT ~For BG2EE or EET ONLY!!~
 END
@@ -27,217 +27,217 @@ END
 // Scripts
 COMPILE
   /* Prison */
-  ~GBThfKp/Scripts/TSGrdGo.baf~
-  ~GBThfKp/Scripts/TSGrdWiz.baf~
+  ~EETGBThfKp/Scripts/TSGrdGo.baf~
+  ~EETGBThfKp/Scripts/TSGrdWiz.baf~
   /* Guild */
-  ~GBThfKp/Scripts/TSGThief.baf~
-  ~GBThfKp/Scripts/TSGuild.baf~
-  ~GBThfKp/Scripts/TSGBase.baf~
-  ~GBThfKp/Scripts/TSJoster.baf~
-  ~GBThfKp/Scripts/TS0321.baf~
-  ~GBThfKp/Scripts/TS0322.baf~
-  ~GBThfKp/Scripts/TS0323.baf~
-  ~GBThfKp/Scripts/TS0324.baf~
-  ~GBThfKp/Scripts/TSSpy1.baf~
-  ~GBThfKp/Scripts/TSShThDr.baf~
-  ~GBThfKp/Scripts/TSDrunk1.baf~
-  ~GBThfKp/Scripts/TSWench1.baf~
+  ~EETGBThfKp/Scripts/TSGThief.baf~
+  ~EETGBThfKp/Scripts/TSGuild.baf~
+  ~EETGBThfKp/Scripts/TSGBase.baf~
+  ~EETGBThfKp/Scripts/TSJoster.baf~
+  ~EETGBThfKp/Scripts/TS0321.baf~
+  ~EETGBThfKp/Scripts/TS0322.baf~
+  ~EETGBThfKp/Scripts/TS0323.baf~
+  ~EETGBThfKp/Scripts/TS0324.baf~
+  ~EETGBThfKp/Scripts/TSSpy1.baf~
+  ~EETGBThfKp/Scripts/TSShThDr.baf~
+  ~EETGBThfKp/Scripts/TSDrunk1.baf~
+  ~EETGBThfKp/Scripts/TSWench1.baf~
   /* Narlen Darkwalk */
-  ~GBThfKp/Scripts/TSTaxBox.baf~
-  ~GBThfKp/Scripts/TSNCut1.baf~
-  ~GBThfKp/Scripts/TSSmug.baf~
-  ~GBThfKp/Scripts/TS0010.baf~
-  ~GBThfKp/Scripts/TS0011.baf~
+  ~EETGBThfKp/Scripts/TSTaxBox.baf~
+  ~EETGBThfKp/Scripts/TSNCut1.baf~
+  ~EETGBThfKp/Scripts/TSSmug.baf~
+  ~EETGBThfKp/Scripts/TS0010.baf~
+  ~EETGBThfKp/Scripts/TS0011.baf~
   /* Guard House Assualt */
-  ~GBThfKp/Scripts/TS0020.baf~
-  ~GBThfKp/Scripts/TS5Wiz.baf~
-  ~GBThfKp/Scripts/TS5Bad.baf~
-  ~GBThfKp/Scripts/TS5Base.baf~
-  ~GBThfKp/Scripts/TS5Thf.baf~
-  ~GBThfKp/Scripts/TS5Use.baf~
-  ~GBThfKp/Scripts/TSSpy2.baf~
-  ~GBThfKp/Scripts/TSDkGdGo.baf~
+  ~EETGBThfKp/Scripts/TS0020.baf~
+  ~EETGBThfKp/Scripts/TS5Wiz.baf~
+  ~EETGBThfKp/Scripts/TS5Bad.baf~
+  ~EETGBThfKp/Scripts/TS5Base.baf~
+  ~EETGBThfKp/Scripts/TS5Thf.baf~
+  ~EETGBThfKp/Scripts/TS5Use.baf~
+  ~EETGBThfKp/Scripts/TSSpy2.baf~
+  ~EETGBThfKp/Scripts/TSDkGdGo.baf~
 
 
 // Script Merging
   /* Pick Pockets */
-EXTEND_BOTTOM   ~AR0020.bcs~  ~GBThfKp/Scripts/AR0020AddB01.baf~
-EXTEND_BOTTOM   ~AR0300.bcs~  ~GBThfKp/Scripts/AR0300AddB01.baf~
-EXTEND_BOTTOM   ~AR0400.bcs~  ~GBThfKp/Scripts/AR0400AddB01.baf~
-EXTEND_BOTTOM   ~AR0500.bcs~  ~GBThfKp/Scripts/AR0500AddB01.baf~
-EXTEND_BOTTOM   ~AR0700.bcs~  ~GBThfKp/Scripts/AR0700AddB01.baf~
-EXTEND_BOTTOM   ~AR0800.bcs~  ~GBThfKp/Scripts/AR0800AddB01.baf~
-EXTEND_BOTTOM   ~AR0900.bcs~  ~GBThfKp/Scripts/AR0900AddB01.baf~
-EXTEND_BOTTOM   ~AR1000.bcs~  ~GBThfKp/Scripts/AR1000AddB01.baf~
+EXTEND_BOTTOM   ~AR0020.bcs~  ~EETGBThfKp/Scripts/AR0020AddB01.baf~
+EXTEND_BOTTOM   ~AR0300.bcs~  ~EETGBThfKp/Scripts/AR0300AddB01.baf~
+EXTEND_BOTTOM   ~AR0400.bcs~  ~EETGBThfKp/Scripts/AR0400AddB01.baf~
+EXTEND_BOTTOM   ~AR0500.bcs~  ~EETGBThfKp/Scripts/AR0500AddB01.baf~
+EXTEND_BOTTOM   ~AR0700.bcs~  ~EETGBThfKp/Scripts/AR0700AddB01.baf~
+EXTEND_BOTTOM   ~AR0800.bcs~  ~EETGBThfKp/Scripts/AR0800AddB01.baf~
+EXTEND_BOTTOM   ~AR0900.bcs~  ~EETGBThfKp/Scripts/AR0900AddB01.baf~
+EXTEND_BOTTOM   ~AR1000.bcs~  ~EETGBThfKp/Scripts/AR1000AddB01.baf~
   /* Narlen */
-EXTEND_BOTTOM   ~Baldur.bcs~  ~GBThfKp/Scripts/BaldurAddB01.baf~
+EXTEND_BOTTOM   ~Baldur.bcs~  ~EETGBThfKp/Scripts/BaldurAddB01.baf~
   /* Guard House Assault */
-EXTEND_BOTTOM   ~AR0300.bcs~  ~GBThfKp/Scripts/AR0300AddB02.baf~
+EXTEND_BOTTOM   ~AR0300.bcs~  ~EETGBThfKp/Scripts/AR0300AddB02.baf~
   /* Guild */
   /* Prison */
-EXTEND_BOTTOM   ~AR1000.bcs~  ~GBThfKp/Scripts/AR1000AddB02.baf~
+EXTEND_BOTTOM   ~AR1000.bcs~  ~EETGBThfKp/Scripts/AR1000AddB02.baf~
 ACTION_IF FILE_EXISTS ~override/AR1005.bcs~ THEN BEGIN
-  EXTEND_TOP ~AR1005.bcs~  ~GBThfKp/Scripts/AR1005.baf~ END ELSE BEGIN
-  COMPILE  ~GBThfKp/Scripts/AR1005.baf~ END
+  EXTEND_TOP ~AR1005.bcs~  ~EETGBThfKp/Scripts/AR1005.baf~ END ELSE BEGIN
+  COMPILE  ~EETGBThfKp/Scripts/AR1005.baf~ END
   /* Guard House Assault */
 ACTION_IF FILE_EXISTS ~override/AR0332.bcs~ THEN BEGIN   // pseudo game file (*)
-  EXTEND_TOP ~AR0332.bcs~  ~GBThfKp/Scripts/AR0332.baf~ END ELSE BEGIN
-  COMPILE  ~GBThfKp/Scripts/AR0332.baf~ END
+  EXTEND_TOP ~AR0332.bcs~  ~EETGBThfKp/Scripts/AR0332.baf~ END ELSE BEGIN
+  COMPILE  ~EETGBThfKp/Scripts/AR0332.baf~ END
 ACTION_IF FILE_EXISTS ~override/AR0333.bcs~ THEN BEGIN   // pseudo game file (*)
-  EXTEND_TOP ~AR0333.bcs~  ~GBThfKp/Scripts/AR0333.baf~ END ELSE BEGIN
-  COMPILE  ~GBThfKp/Scripts/AR0333.baf~ END
+  EXTEND_TOP ~AR0333.bcs~  ~EETGBThfKp/Scripts/AR0333.baf~ END ELSE BEGIN
+  COMPILE  ~EETGBThfKp/Scripts/AR0333.baf~ END
 
 // Dialogues
   /* Pick Pockets */
-COMPILE  ~GBThfKp/Dialogs/TSPick01.d~  USING ~%s/TSPick01.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSPick01.d~  USING ~%s/TSPick01.tra~
   /* Guild */
-COMPILE  ~GBThfKp/Dialogs/TSGT01.d~    USING ~%s/TSGT01.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGT02.d~    USING ~%s/TSGT02.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGT03.d~    USING ~%s/TSGT03.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGT04.d~    USING ~%s/TSGT04.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGT05.d~    USING ~%s/TSGT05.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGT06.d~    USING ~%s/TSGT06.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGG01.d~    USING ~%s/TSGG01.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGLT1.d~    USING ~%s/TSGLT1.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGLT2.d~    USING ~%s/TSGLT2.tra~
-COMPILE  ~GBThfKp/Dialogs/TSGS1.d~     USING ~%s/TSGS1.tra~
-COMPILE  ~GBThfKp/Dialogs/TSKamuzu.d~  USING ~%s/TSKamuzu.tra~
-COMPILE  ~GBThfKp/Dialogs/TSLath01.d~  USING ~%s/TSLath01.tra~
-COMPILE  ~GBThfKp/Dialogs/TSLath01.d~  USING ~%s/TSLath01.tra~
-COMPILE  ~GBThfKp/Dialogs/TSDrunk1.d~  USING ~%s/TSDrunk1.tra~
-COMPILE  ~GBThfKp/Dialogs/TSWench1.d~  USING ~%s/TSWench1.tra~
-COMPILE  ~GBThfKp/Dialogs/TSAma1.d~    USING ~%s/TSAma1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT01.d~    USING ~%s/TSGT01.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT02.d~    USING ~%s/TSGT02.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT03.d~    USING ~%s/TSGT03.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT04.d~    USING ~%s/TSGT04.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT05.d~    USING ~%s/TSGT05.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGT06.d~    USING ~%s/TSGT06.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGG01.d~    USING ~%s/TSGG01.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGLT1.d~    USING ~%s/TSGLT1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGLT2.d~    USING ~%s/TSGLT2.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSGS1.d~     USING ~%s/TSGS1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSKamuzu.d~  USING ~%s/TSKamuzu.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSLath01.d~  USING ~%s/TSLath01.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSLath01.d~  USING ~%s/TSLath01.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSDrunk1.d~  USING ~%s/TSDrunk1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSWench1.d~  USING ~%s/TSWench1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSAma1.d~    USING ~%s/TSAma1.tra~
 
-//COMPILE  ~GBThfKp/Dialogs/Lt01MinscTran.d~ //USING ~%s/Lt01MinscTran.tra~
+//COMPILE  ~EETGBThfKp/Dialogs/Lt01MinscTran.d~ //USING ~%s/Lt01MinscTran.tra~
 
   /* Narlen Darkwalk */
-COMPILE  ~GBThfKp/Dialogs/TSNarlen.d~  USING ~%s/TSNarlen.tra~
-COMPILE  ~GBThfKp/Dialogs/TSBlackL.d~  USING ~%s/TSBlackL.tra~
-COMPILE  ~GBThfKp/Dialogs/TSNBad1.d~   USING ~%s/TSNBad1.tra~
-COMPILE  ~GBThfKp/Dialogs/TSSmugB.d~   USING ~%s/TSSmugB.tra~
-COMPILE  ~GBThfKp/Dialogs/TSSmugF.d~   USING ~%s/TSSmugF.tra~
-COMPILE  ~GBThfKp/Dialogs/TSSmugM.d~   USING ~%s/TSSmugM.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSNarlen.d~  USING ~%s/TSNarlen.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSBlackL.d~  USING ~%s/TSBlackL.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSNBad1.d~   USING ~%s/TSNBad1.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSSmugB.d~   USING ~%s/TSSmugB.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSSmugF.d~   USING ~%s/TSSmugF.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TSSmugM.d~   USING ~%s/TSSmugM.tra~
   /* Guard House Assault */
-COMPILE  ~GBThfKp/Dialogs/TS5Bad.d~    USING ~%s/TS5Bad.tra~
-COMPILE  ~GBThfKp/Dialogs/TS5Thf.d~    USING ~%s/TS5Thf.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TS5Bad.d~    USING ~%s/TS5Bad.tra~
+COMPILE  ~EETGBThfKp/Dialogs/TS5Thf.d~    USING ~%s/TS5Thf.tra~
 
 // Copy Files (clean)
 COPY
   /* General */
   /* Pick Pockets */
-    ~GBThfKp/Creatures/TSPick1.cre~   ~override/TSPick1.cre~
-    ~GBThfKp/Creatures/TSPick2.cre~   ~override/TSPick2.cre~
-    ~GBThfKp/Creatures/TSPick3.cre~   ~override/TSPick3.cre~
-    ~GBThfKp/Creatures/TSPick4.cre~   ~override/TSPick4.cre~
-    ~GBThfKp/Creatures/TSPick5.cre~   ~override/TSPick5.cre~
-    ~GBThfKp/Creatures/TSPick6.cre~   ~override/TSPick6.cre~
-    ~GBThfKp/Creatures/TSPick7.cre~   ~override/TSPick7.cre~
-    ~GBThfKp/Creatures/TSPick8.cre~   ~override/TSPick8.cre~
-    ~GBThfKp/Items/TSPick.itm~        ~override/TSPick.itm~
+    ~EETGBThfKp/Creatures/TSPick1.cre~   ~override/TSPick1.cre~
+    ~EETGBThfKp/Creatures/TSPick2.cre~   ~override/TSPick2.cre~
+    ~EETGBThfKp/Creatures/TSPick3.cre~   ~override/TSPick3.cre~
+    ~EETGBThfKp/Creatures/TSPick4.cre~   ~override/TSPick4.cre~
+    ~EETGBThfKp/Creatures/TSPick5.cre~   ~override/TSPick5.cre~
+    ~EETGBThfKp/Creatures/TSPick6.cre~   ~override/TSPick6.cre~
+    ~EETGBThfKp/Creatures/TSPick7.cre~   ~override/TSPick7.cre~
+    ~EETGBThfKp/Creatures/TSPick8.cre~   ~override/TSPick8.cre~
+    ~EETGBThfKp/Items/TSPick.itm~        ~override/TSPick.itm~
   /* Prison */
-    ~GBThfKp/Creatures/TSGrd00.cre~   ~override/TSGrd00.cre~
-    ~GBThfKp/Creatures/TSGrd01.cre~   ~override/TSGrd01.cre~
-    ~GBThfKp/Creatures/TSGrd02.cre~   ~override/TSGrd02.cre~
+    ~EETGBThfKp/Creatures/TSGrd00.cre~   ~override/TSGrd00.cre~
+    ~EETGBThfKp/Creatures/TSGrd01.cre~   ~override/TSGrd01.cre~
+    ~EETGBThfKp/Creatures/TSGrd02.cre~   ~override/TSGrd02.cre~
   /* Guild */
-    ~GBThfKp/Creatures/TSSpy1.cre~    ~override/TSSpy1.cre~
+    ~EETGBThfKp/Creatures/TSSpy1.cre~    ~override/TSSpy1.cre~
   /* Narlen Darkwalk */
-    ~GBThfKp/Creatures/TSNarlen.cre~  ~override/TSNarlen.cre~
-    ~GBThfKp/Creatures/TSSmugB.cre~   ~override/TSSmugB.cre~
-    ~GBThfKp/Creatures/TSSmugF.cre~   ~override/TSSmugF.cre~
-    ~GBThfKp/Creatures/TSSmugM.cre~   ~override/TSSmugM.cre~
-    ~GBThfKp/Areas/TS0010.are~        ~override/TS0010.are~
-    ~GBThfKp/Areas/TS0011.are~        ~override/TS0011.are~
-    ~GBThfKp/BMPs/TSNarlen.bmp~       ~override/TSNarlen.bmp~
-    ~GBThfKp/BMPs/TSBlackL.bmp~       ~override/TSBlackL.bmp~
+    ~EETGBThfKp/Creatures/TSNarlen.cre~  ~override/TSNarlen.cre~
+    ~EETGBThfKp/Creatures/TSSmugB.cre~   ~override/TSSmugB.cre~
+    ~EETGBThfKp/Creatures/TSSmugF.cre~   ~override/TSSmugF.cre~
+    ~EETGBThfKp/Creatures/TSSmugM.cre~   ~override/TSSmugM.cre~
+    ~EETGBThfKp/Areas/TS0010.are~        ~override/TS0010.are~
+    ~EETGBThfKp/Areas/TS0011.are~        ~override/TS0011.are~
+    ~EETGBThfKp/BMPs/TSNarlen.bmp~       ~override/TSNarlen.bmp~
+    ~EETGBThfKp/BMPs/TSBlackL.bmp~       ~override/TSBlackL.bmp~
   /* Guard House Assualt */
-    ~GBThfKp/Areas/TS0020.are~        ~override/TS0020.are~
-    ~GBThfKp/Creatures/TSSpy2.cre~    ~override/TSSpy2.cre~
-    ~GBThfKp/Creatures/TS5Grd.cre~    ~override/TS5Grd.cre~
-    ~GBThfKp/Creatures/TS5Grd1.cre~   ~override/TS5Grd1.cre~
-    ~GBThfKp/Creatures/TS5Grd2.cre~   ~override/TS5Grd2.cre~
-    ~GBThfKp/Creatures/TS5Wiz.cre~    ~override/TS5Wiz.cre~
+    ~EETGBThfKp/Areas/TS0020.are~        ~override/TS0020.are~
+    ~EETGBThfKp/Creatures/TSSpy2.cre~    ~override/TSSpy2.cre~
+    ~EETGBThfKp/Creatures/TS5Grd.cre~    ~override/TS5Grd.cre~
+    ~EETGBThfKp/Creatures/TS5Grd1.cre~   ~override/TS5Grd1.cre~
+    ~EETGBThfKp/Creatures/TS5Grd2.cre~   ~override/TS5Grd2.cre~
+    ~EETGBThfKp/Creatures/TS5Wiz.cre~    ~override/TS5Wiz.cre~
 
-ACTION_IF ("%LANGUAGE%" STRING_COMPARE_CASE "GBThfKp/Translations/German" = 0) AND (FILE_EXISTS ~Data/BG1ARE.bif~) THEN BEGIN
+ACTION_IF ("%LANGUAGE%" STRING_COMPARE_CASE "EETGBThfKp/Translations/German" = 0) AND (FILE_EXISTS ~Data/BG1ARE.bif~) THEN BEGIN
 END
 ELSE BEGIN
-COPY ~GBThfKp/WAVs/Bandt01.wav~        ~override/Bandt01.wav~
-COPY ~GBThfKp/WAVs/Bandt02.wav~        ~override/Bandt02.wav~
-COPY ~GBThfKp/WAVs/Bandt03.wav~        ~override/Bandt03.wav~
-COPY ~GBThfKp/WAVs/Bandt04.wav~        ~override/Bandt04.wav~
-COPY ~GBThfKp/WAVs/Bandt05.wav~        ~override/Bandt05.wav~
-COPY ~GBThfKp/WAVs/Bandt06.wav~        ~override/Bandt06.wav~
-COPY ~GBThfKp/WAVs/BlackL01.wav~       ~override/BlackL01.wav~
-COPY ~GBThfKp/WAVs/BlackL02.wav~       ~override/BlackL02.wav~
-COPY ~GBThfKp/WAVs/BlackL03.wav~       ~override/BlackL03.wav~
-COPY ~GBThfKp/WAVs/BlackL04.wav~       ~override/BlackL04.wav~
-COPY ~GBThfKp/WAVs/Narln01.wav~        ~override/Narln01.wav~
-COPY ~GBThfKp/WAVs/Narln02.wav~        ~override/Narln02.wav~
-COPY ~GBThfKp/WAVs/Narln03.wav~        ~override/Narln03.wav~
-COPY ~GBThfKp/WAVs/Narln04.wav~        ~override/Narln04.wav~
+COPY ~EETGBThfKp/WAVs/Bandt01.wav~        ~override/Bandt01.wav~
+COPY ~EETGBThfKp/WAVs/Bandt02.wav~        ~override/Bandt02.wav~
+COPY ~EETGBThfKp/WAVs/Bandt03.wav~        ~override/Bandt03.wav~
+COPY ~EETGBThfKp/WAVs/Bandt04.wav~        ~override/Bandt04.wav~
+COPY ~EETGBThfKp/WAVs/Bandt05.wav~        ~override/Bandt05.wav~
+COPY ~EETGBThfKp/WAVs/Bandt06.wav~        ~override/Bandt06.wav~
+COPY ~EETGBThfKp/WAVs/BlackL01.wav~       ~override/BlackL01.wav~
+COPY ~EETGBThfKp/WAVs/BlackL02.wav~       ~override/BlackL02.wav~
+COPY ~EETGBThfKp/WAVs/BlackL03.wav~       ~override/BlackL03.wav~
+COPY ~EETGBThfKp/WAVs/BlackL04.wav~       ~override/BlackL04.wav~
+COPY ~EETGBThfKp/WAVs/Narln01.wav~        ~override/Narln01.wav~
+COPY ~EETGBThfKp/WAVs/Narln02.wav~        ~override/Narln02.wav~
+COPY ~EETGBThfKp/WAVs/Narln03.wav~        ~override/Narln03.wav~
+COPY ~EETGBThfKp/WAVs/Narln04.wav~        ~override/Narln04.wav~
 END
 
 // Copy Files (w/strings)
   /* Guild */
-COPY  ~GBThfKp/Stores/TSStore1.sto~     ~override/TSStore1.sto~
+COPY  ~EETGBThfKp/Stores/TSStore1.sto~     ~override/TSStore1.sto~
   //WRITE_ASCII  0x44 ~TSRumor1~
   SAY 0xa4  @136
   SAY 0xb8  @137
   SAY 0xcc  @138
   SAY 0xe0  @139
   SAY 0xf4  @140
-COPY  ~GBThfKp/Items/TSKey.itm~         ~override/TSKey.itm~
+COPY  ~EETGBThfKp/Items/TSKey.itm~         ~override/TSKey.itm~
   SAY NAME1 @103
   SAY NAME2 @103
   SAY DESC @104
-COPY  ~GBThfKp/Stores/TSKamuzu.sto~     ~override/TSKamuzu.sto~
+COPY  ~EETGBThfKp/Stores/TSKamuzu.sto~     ~override/TSKamuzu.sto~
   SAY NAME2 @109
   /* Narlen Darkwalk */
-COPY  ~GBThfKp/Creatures/TSBlackL.cre~  ~override/TSBlackL.cre~
+COPY  ~EETGBThfKp/Creatures/TSBlackL.cre~  ~override/TSBlackL.cre~
   SAY 0164  @120
   SAY 0268  @119
   SAY 0272  @120
   SAY 0236  @121
   SAY 0240  @122
   SAY 0244  @123
-COPY  ~GBThfKp/Creatures/TSNBad1.cre~   ~override/TSNBad1.cre~
+COPY  ~EETGBThfKp/Creatures/TSNBad1.cre~   ~override/TSNBad1.cre~
   SAY NAME1 @117
   SAY NAME2 @117
-COPY  ~GBThfKp/Creatures/TSNDoor.cre~   ~override/TSNDoor.cre~
+COPY  ~EETGBThfKp/Creatures/TSNDoor.cre~   ~override/TSNDoor.cre~
   SAY NAME1 @118
   SAY NAME2 @118
-COPY  ~GBThfKp/Items/TSNLoot1.itm~      ~override/TSNLoot1.itm~
+COPY  ~EETGBThfKp/Items/TSNLoot1.itm~      ~override/TSNLoot1.itm~
   SAY NAME1 @126
   SAY NAME2 @107
   SAY 0080  @127
   SAY DESC  @108
-COPY  ~GBThfKp/Stores/TSBlackL.sto~     ~override/TSBlackL.sto~
+COPY  ~EETGBThfKp/Stores/TSBlackL.sto~     ~override/TSBlackL.sto~
   SAY NAME2 @110
   /* Guard House Assault */
-COPY  ~GBThfKp/Creatures/TS5Bad.cre~    ~override/TS5Bad.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Bad.cre~    ~override/TS5Bad.cre~
   SAY NAME1 @101
   SAY NAME2 @101
-COPY  ~GBThfKp/Creatures/TS5Door.cre~   ~override/TS5Door.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Door.cre~   ~override/TS5Door.cre~
   SAY NAME1 @102
   SAY NAME2 @102
-COPY  ~GBThfKp/Creatures/TS5Thf1.cre~   ~override/TS5Thf1.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf1.cre~   ~override/TS5Thf1.cre~
   SAY NAME1 @111
   SAY NAME2 @111
-COPY  ~GBThfKp/Creatures/TS5Thf2.cre~   ~override/TS5Thf2.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf2.cre~   ~override/TS5Thf2.cre~
   SAY NAME1 @112
   SAY NAME2 @112
-COPY  ~GBThfKp/Creatures/TS5Thf3.cre~   ~override/TS5Thf3.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf3.cre~   ~override/TS5Thf3.cre~
   SAY NAME1 @113
   SAY NAME2 @113
-COPY  ~GBThfKp/Creatures/TS5Thf4.cre~   ~override/TS5Thf4.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf4.cre~   ~override/TS5Thf4.cre~
   SAY NAME1 @114
   SAY NAME2 @114
-COPY  ~GBThfKp/Creatures/TS5Thf5.cre~   ~override/TS5Thf5.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf5.cre~   ~override/TS5Thf5.cre~
   SAY NAME1 @115
   SAY NAME2 @115
-COPY  ~GBThfKp/Creatures/TS5Thf6.cre~   ~override/TS5Thf6.cre~
+COPY  ~EETGBThfKp/Creatures/TS5Thf6.cre~   ~override/TS5Thf6.cre~
   SAY NAME1 @116
   SAY NAME2 @116
-COPY  ~GBThfKp/Items/TS5Loot1.itm~      ~override/TS5Loot1.itm~
+COPY  ~EETGBThfKp/Items/TS5Loot1.itm~      ~override/TS5Loot1.itm~
   SAY NAME1 @124
   SAY NAME2 @105
   SAY 0080 @125
@@ -504,12 +504,12 @@ COPY_EXISTING  ~DOCSOL01.cre~    ~override/DOCSOL01.cre~  // original game file
 COPY_EXISTING  ~DOCSOL02.cre~    ~override/DOCSOL02.cre~  // original game file
   WRITE_ASCII 0x250 ~TSDkGdGo~     // class script
   
-EXTEND_TOP ~docsol03.bcs~ ~gbthfkp/scripts/tsdkgdgo.baf~
+EXTEND_TOP ~docsol03.bcs~ ~EETGBThfKp/scripts/tsdkgdgo.baf~
 
 BEGIN ~Improved Mae'Var~
-REQUIRE_COMPONENT ~GBTHFKP.TP2~ 0 ~Main component required.~	 
-COPY ~GBThfKp/impmaevar~ ~override~
+REQUIRE_COMPONENT ~EETGBThfKp.TP2~ 0 ~Main component required.~	 
+COPY ~EETGBThfKp/impmaevar~ ~override~
 
 BEGIN ~Thief Stronghold for All~
-REQUIRE_COMPONENT ~GBTHFKP.TP2~ 0 ~Main component required.~
-COMPILE ~GBThfKp/Stronghold/Stronghold.d~ 
+REQUIRE_COMPONENT ~EETGBThfKp.TP2~ 0 ~Main component required.~
+COMPILE ~EETGBThfKp/Stronghold/Stronghold.d~ 
