@@ -508,6 +508,12 @@ COPY_EXISTING  ~DOCSOL02.cre~    ~override/DOCSOL02.cre~  // original game file
   
 EXTEND_TOP ~docsol03.bcs~ ~EETGBThfKp/scripts/tsdkgdgo.baf~
 
+ACTION_IF GAME_IS ~eet~ BEGIN
+
+STRING_SET
+239808 ~They all do, Mae'Var. For the moment.~
+END
+
 BEGIN ~Improved Mae'Var~
 REQUIRE_COMPONENT ~EETGBThfKp.TP2~ 0 ~Main component required.~	 
 COPY ~EETGBThfKp/impmaevar~ ~override~
