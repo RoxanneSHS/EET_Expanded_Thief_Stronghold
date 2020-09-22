@@ -1,5 +1,4 @@
 IF
-  OnCreation()
   Global("TSNarlenBadGuys2","GLOBAL",0)
 THEN
   RESPONSE #100

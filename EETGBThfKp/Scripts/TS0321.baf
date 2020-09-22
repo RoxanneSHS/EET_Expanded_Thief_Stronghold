@@ -1,5 +1,4 @@
 IF
-  OnCreation()
   Global("TSReveal0321","GLOBAL",0)
 THEN
   RESPONSE #100
