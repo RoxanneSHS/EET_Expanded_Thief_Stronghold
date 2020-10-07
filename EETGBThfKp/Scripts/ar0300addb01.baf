@@ -20,4 +20,15 @@ THEN
     AddMapNote([3509.938],19351)
 END
 
+IF
+Global("JosterLeave","GLOBAL",1)
+Global("PGSetPriceOnce","ar0300",0)
+Global("PGQuota","GLOBAL",0)
+Global("TalkedToJoster","GLOBAL",0)
+THEN
+  RESPONSE #100
+SetGlobal("PGSetPriceOnce","ar0300",1)
+SetGlobal("PGQuota","GLOBAL",1)
+END
+
 
